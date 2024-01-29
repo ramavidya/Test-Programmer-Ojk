@@ -1,0 +1,30 @@
+﻿@model List<CRUD.Models.Domain.MataKuliah>
+
+@{
+}
+
+<h1>Mata Kuliah</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kode Mata Kuliah</th>
+            <th>Nama Mata Kuliah</th>
+            <th>Sks</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var mataKuliah in Model)
+        {
+            <tr>
+                <td>@mataKuliah.Id</td>
+                <td>@mataKuliah.KodeMK</td>
+                <td>@mataKuliah.NamaMK</td>
+                <td>@mataKuliah.Sks</td>
+                <td><a href="MataKuliah/View/@mataKuliah.Id">Edit/Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+﻿@model AddDosenViewModel
+
+@{
+}
+
+<h1>Tambahkan Dosen</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nip</label>
+        <input type="text" class="form-control" asp-for="Nip">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nama Dosen</label>
+        <input type="text" class="form-control" asp-for="Nama">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

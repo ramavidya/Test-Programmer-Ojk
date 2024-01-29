@@ -1,0 +1,28 @@
+﻿@model List<CRUD.Models.Domain.Dosen>
+@{
+}
+
+
+<h1>Dosen</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nip</th>
+            <th>Nama Dosen</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dosen in Model)
+        {
+            <tr>
+                <td>@dosen.Id</td>
+                <td>@dosen.Nip</td>
+                <td>@dosen.Nama</td>
+                <td><a href="Dosen/View/@dosen.Id">Edit/Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

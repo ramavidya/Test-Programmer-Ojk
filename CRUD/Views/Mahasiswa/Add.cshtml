@@ -1,0 +1,33 @@
+﻿@model AddMahasiswaViewModel
+
+@{
+}
+
+<h1>Tambahkan Mahasiswa</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nim</label>
+        <input type="text" class="form-control" asp-for="Nim">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nama Mahasiswa</label>
+        <input type="text" class="form-control" asp-for="Nama">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tanggal Lahir</label>
+        <input type="date" class="form-control" asp-for="Birth">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Alamat</label>
+        <input type="text" class="form-control" asp-for="Alamat">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Jenis Kelamin</label>
+        <select class="form-control" id="jenisKelamin" asp-for="JenisKelamin">
+            <option value="Pria">Pria</option>
+            <option value="Wanita">Wanita</option>
+        </select>
+            
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

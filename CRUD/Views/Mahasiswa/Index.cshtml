@@ -1,0 +1,34 @@
+﻿@model List<CRUD.Models.Domain.Mahasiswa>
+
+@{
+}
+
+<h1>Mahasiswa</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nim</th>
+            <th>Nama Mahasiswa</th>
+            <th>Tanggal Lahir</th>
+            <th>Alamat</th>
+            <th>Jenis Kelamin</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var mahasiswa in Model)
+        {
+            <tr>
+                <td>@mahasiswa.Id</td>
+                <td>@mahasiswa.Nim</td>
+                <td>@mahasiswa.Nama</td>
+                <td>@mahasiswa.Birth</td>
+                <td>@mahasiswa.Alamat</td>
+                <td>@mahasiswa.JenisKelamin</td>
+                <td><a href="Mahasiswa/View/@mahasiswa.Id">Edit/Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

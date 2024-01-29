@@ -1,0 +1,22 @@
+﻿@model AddMataKuliahViewModel
+
+@{
+}
+
+<h1>Tambahkan Mata Kuliah</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Kode Mata Kuliah</label>
+        <input type="text" class="form-control" asp-for="KodeMK">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nama Mata Kuliah</label>
+        <input type="text" class="form-control" asp-for="NamaMK">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Sks</label>
+        <input type="number" class="form-control" asp-for="Sks">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
